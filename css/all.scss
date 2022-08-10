@@ -1,0 +1,111 @@
+@import url(https://fonts.googleapis.com/css?family=Quattrocento+Sans:400,700);
+@import "variables.scss";
+@import "bootstrap.min.css";
+@import "home.scss";
+@import "menu.scss";
+@import "cate.scss";
+@import "detail.scss";
+@import "faq.scss";
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+html {
+    font-size: 16px;
+    @include device-xs {
+        font-size: 14px;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+// default
+.btn {
+    border-radius: 0;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+.btn-outline-primary {
+    border-color: $default;
+    color: $default;
+    &:hover {
+        background: $default;
+        color: #fff;
+    }
+}
+section {
+    padding: 50px 0;
+
+    @include device-xs {
+        padding: 25px 0;
+    }
+}
+
+.h2 {
+    color: #FFFFFF;
+    text-shadow: 0px 0px 8px #75EDEBDE;
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+// swiper
+.swiper {
+    width: 100%;
+    overflow: hidden;
+}
+.swiper-pagination {
+    position: static;
+}
+
+.swiper-pagination-bullet {
+    background: rgb(227, 227, 227);
+    border-radius: 50px;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background: $default;
+    width: 15px;
+}
+
+.swiper {
+    --swiper-theme-color: #75EDEB;
+    --swiper-navigation-color: #75EDEB;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #75EDEB;
+
+    &::after {
+        font-size: 28px;
+    }
+}
+
+.swiper-button-next {
+    right: -30px;
+}
+
+.swiper-button-prev {
+    left: -30px;
+}
+
+.bg_gradient {
+    background: transparent linear-gradient(180deg, #08182F 0%, #002A68 27%, #08182F 64%, #323563 86%, #08182F 100%) 0% 0% no-repeat padding-box;
+    padding-top: 50px;
+}
+
+.article {
+    h3 {
+        font-size: 1.1rem;
+        margin-top: 3rem;
+    }
+    ol {
+        li {
+            margin-bottom: 1.5rem;
+        }
+    }
+}

@@ -1,0 +1,158 @@
+.home_banner {
+  position: relative;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background-image: linear-gradient(to right, rgba(21, 33, 66, 0.2) , rgba(0, 0, 0, 0));
+  }
+
+  .info {
+    position: relative;
+    color: #fff;
+    margin: auto;
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+  }
+
+  h2 {
+    letter-spacing: .07em;
+  }
+  @include device-xs {
+    h2 {
+      font-size: 1.25rem;
+    }
+    p {
+      font-size: 0.9rem;
+    }
+  }
+
+  @include device-sm {
+    height: 30vh;
+  }
+}
+
+.product_item {
+  display: block;
+  color: #212121;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid #E2E2E2;
+  background: #fff;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+  transition: .3s ease;
+
+  img {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+  }
+
+  .info {
+    padding: 1rem .75rem;
+  }
+
+  h3 {
+    font-size: 1.05rem;
+  }
+
+  .price {
+    color: $default;
+    font-size: 1rem;
+  }
+
+  &:hover {
+    color: $dark;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.title_default {
+  text-align: center;
+  font-size: 1.6rem;
+  left: .07em;
+  margin-bottom: 40px;
+
+  @include device-sm {
+    font-size: 1.4rem;
+  }
+
+  hr {
+    width: 80px;
+    height: 3px;
+    background: $default;
+    margin: 20px auto;
+    border: 0;
+  }
+}
+
+.bg_light {
+  background: rgba(136, 159, 180, 0.04);
+}
+
+.section_about {
+  padding: 120px 0;
+  background-color: #FAFBFC;
+  background-image: url('../img/about.svg');
+  background-size: auto 90%;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+
+  @include device-xl {
+    background-size: auto 80%;
+  }
+
+  @include device-md {
+    background-size: auto 60%;
+  }
+
+  @include device-xs {
+    background-size: auto 50%;
+    padding: 80px 0;
+    padding-top: 60px;
+  }
+
+  .info {
+    h2 {
+      font-size: 1.3rem;
+      color: $default;
+      margin: 1rem 0;
+    }
+  }
+}
+
+footer {
+  .footer_link {
+    a {
+      color: $dark;
+      margin-right: 1rem;
+
+      @include device-xs {
+        margin-right: 0.75rem;
+      }
+
+      &:hover {
+        color: $default;
+      }
+    }
+  }
+
+  .copyright {
+    background: $default;
+    color: #fff;
+    text-align: center;
+    font-size: .9rem;
+    padding: 1rem .5rem;
+  }
+}
+
+.about_content {
+  line-height: 1.7;
+}

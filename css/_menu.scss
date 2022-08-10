@@ -1,0 +1,79 @@
+// menu
+.nav_sticky {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background: #fff;
+    border-bottom: 1px solid #E2E2E2;
+    font-size: 0.9rem;
+}
+.navbar {
+    border-bottom: 1px solid #E2E2E2;
+    .navbar-brand {
+        img {
+            height: 40px;
+            @include device-xs {
+                height: 32px;
+            }
+        }
+    }
+    .form-control {
+        border-radius: 50px;
+        border-radius: 50px;
+        width: 260px;
+        background: #FAFAFA;
+        padding: 8px 18px;
+        margin-left: auto;
+        margin-right: 1rem;
+        &::placeholder {
+            color: #C4C4C4;
+        }
+        @include device-sm {
+            margin-right: 0;
+        }
+        @include device-xs {
+            width: 200px;
+            padding: 6px 16px;
+        }
+    }
+}
+
+.nav_link {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    a {
+        color: #7E7E7E;
+        margin-left: 1rem;
+    }
+    @include device-sm {
+        display: none;
+    }
+}
+a.link_default {
+    color: $default;
+}
+.nav_cate {
+    .swiper-wrapper {
+        justify-content: center;
+        @include device-sm {
+            justify-content: flex-start;
+        }
+    }
+    .swiper-slide {
+        width: auto!important;
+    }
+    a {
+        display: inline-block;
+        color: #7E7E7E;
+        padding: 12px 16px;
+        &:hover {
+            color: $default;
+        }
+        @include device-xs {
+            padding: 12px 8px;
+        }
+    }
+}

@@ -1,0 +1,124 @@
+.slide_product {
+    position: relative;
+
+    @include device-md {
+        margin-bottom: 1rem;
+    }
+
+    .slide_arrow {
+        position: absolute;
+        top: 50%;
+        left: -38px;
+
+        @include device-sm {
+            display: none;
+        }
+
+        img {
+            width: 30px;
+        }
+    }
+
+    .arrowRight {
+        left: auto;
+        right: -38px;
+    }
+}
+
+.p_detail {
+    display: flex;
+    flex-direction: column;
+    color: #7E7E7E;
+    background: #fff;
+    border-radius: 6px;
+    border: 1px solid #E2E2E2;
+    padding: 2rem;
+    height: 100%;
+    @include device-xs {
+        padding: 2rem 1.5rem;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+        color: $dark;
+    }
+
+    .label_list {
+        margin-bottom: 0.75rem;
+    }
+
+    .info {
+        color: #7E7E7E;
+        font-size: 0.95rem;
+    }
+
+    .p_spe {
+        font-size: 0.95rem;
+    }
+
+    .price_item {
+        s {
+            font-size: 1rem;
+        }
+
+        span {
+            font-size: 1.4rem;
+        }
+    }
+}
+
+.spe_list {
+    margin-bottom: 2rem;
+
+    li {
+        margin-bottom: .5rem;
+    }
+
+    .title {
+        font-size: 0.9rem;
+        font-weight: bold;
+        color: $dark;
+        margin-bottom: 0.25rem;
+    }
+
+    a {
+        display: inline-block;
+        border: 1px solid #E2E2E2;
+        color: #7E7E7E;
+        font-size: 0.9rem;
+        padding: 8px 10px;
+        border-radius: 4px;
+        margin-right: 0.5rem;
+        margin-bottom: 0.5rem;
+
+        &.active {
+            border-color: $default;
+            color: $default;
+        }
+    }
+}
+
+.share_fixed {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    z-index: 9;
+
+    img {
+        width: 50px;
+    }
+
+    @include device-sm {
+        right: 40px;
+        bottom: 40px;
+
+        img {
+            width: 40px;
+        }
+    }
+
+    @include device-xs {
+        right: 12px;
+        bottom: 12px;
+    }
+}

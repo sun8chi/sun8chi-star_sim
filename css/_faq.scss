@@ -1,0 +1,45 @@
+// faq
+.accordion-item {
+    background: transparent;
+    border: 0;
+
+    h3 {
+        position: relative;
+        font-size: 1.1rem;
+        margin: 0;
+        padding: 1rem 0;
+        border-bottom: 1px solid $default;
+        font-weight: 400;
+        cursor: pointer;
+
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            width: 16px;
+            height: 1px;
+            background: $default;
+            right: 0;
+            top: 50%;
+            transition: .3s ease;
+        }
+
+        &::after {
+            transform: rotate(90deg);
+        }
+
+        &:not(.collapsed) {
+            color: $default;
+            border-bottom: 1px solid $default;
+
+            &::after {
+                background: $default;
+                transform: rotate(0deg);
+            }
+        }
+    }
+}
+
+.accordion-body {
+    color: rgb(53, 53, 53);
+}

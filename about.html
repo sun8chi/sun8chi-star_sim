@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>星光卡</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="description" content="" />
+  <meta property="og:description" content="" />
+  <meta itemprop="image" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="" />
+  <meta property="og:site_name" content="" />
+  <link rel="icon" type="image/png" href="img/favicon.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
+  <link rel="stylesheet" href="css/all.css?v2" />
+</head>
+
+<body>
+  <div id="app">
+    <!-- menu -->
+    <navbar_main></navbar_main>
+    <section class="bg_light">
+      <div class="container about_content">
+        <h2 class="title_default">
+          關於我們
+          <hr>
+        </h2>
+        <div class="row align-items-center justify-content-center mb-3 mb-xl-5 gx-5">
+          <div class="col-xl-5">
+            <img src="img/about01.jpg" class="w-100 my-3" alt="">
+          </div>
+          <div class="col-xl-5">
+            <p>旅遊全世界，少了上網卡，就像斷了線的風箏，有了上網卡但上網過程卡頓卡頓，就像快沒油的汽車，隨時都會掛點，整個行程將焦躁不安，造成商旅品質效率低落。 </p>
+            <p>而市售上網卡品質參差不齊，騙(偷)流量（如以網速每秒128k*60*60*24誆騙每天11GB上網量）或誇大上網速度者不乏其數，消費者花了錢賠了行程，卻也求償無門。</p>
+          </div>
+        </div>
+        <div class="row align-items-center justify-content-center mb-5 gx-5">
+          <div class="col-xl-5 order-2 order-xl-1">
+            <p>星光卡團隊有鑑於此亂象，憑藉20餘年電信經驗，提供全球各國知名行動電信營商全球上網卡，秉持「不偷流量 不誆網速」讓客戶「買的安心 用的順心 商旅稱心」的經營使命，期許全球只要有星光的地方都有客戶滿意星光卡的服務，也期許全球上網卡市場的正派經營，提供客戶等值的服務!</p>
+          </div>
+          <div class="col-xl-5 order-1 order-xl-2">
+            <img src="img/about02.png" class="w-100 my-3" alt="">
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <!-- footer -->
+    <footer_main></footer_main>
+  </div>
+
+
+  <noscript>您的瀏覽器不支援JavaScript功能，若本網站功能無法正常使用，請開啟瀏覽器JavaScript狀態</noscript>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="js/vue.global.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+
+
+  <script type="module">
+    import navbar_main from './js/page/menu.js';
+    import footer_main from './js/page/footer.js';
+    const app = Vue.createApp({
+      data() {
+        return {
+          hello: '123'
+        };
+      },
+      components: {
+        navbar_main,
+        footer_main,
+      }
+    });
+    app.mount('#app');
+  </script>
+
+  <script>
+    $(document).ready(function () {
+      // wow
+      var wow = new WOW({
+        boxClass: 'wow',
+        animateClass: 'animated',
+        offset: 0,
+        mobile: false,
+        live: true
+      });
+      wow.init();
+
+    });
+  </script>
+
+</body>
+
+</html>

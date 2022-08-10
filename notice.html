@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>星光卡</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="description" content="" />
+  <meta property="og:description" content="" />
+  <meta itemprop="image" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="" />
+  <meta property="og:site_name" content="" />
+  <link rel="icon" type="image/png" href="img/favicon.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
+  <link rel="stylesheet" href="css/all.css?v2" />
+</head>
+
+<body>
+  <div id="app">
+    <!-- menu -->
+    <navbar_main></navbar_main>
+    <section class="bg_light">
+      <div class="container about_content">
+        <h2 class="title_default">
+          星光卡購物說明
+          <hr>
+        </h2>
+
+        <div class="col-md-10 m-auto">
+          <div class="article">
+            <p>為了您旅途的順心愉快，我們有責任告知您在國外(全球)使用上網卡過程的必要了解，也希望您能理解以下資訊對您使用星光卡的重要性。</p>
+            <ol>
+              <li>漫遊品質及數據量需求，因應使用目的不同及手機規格、網卡種類及當地網路環境，無法保證100%滿足您的期望，請您謹慎選購適合的商品！</li>
+              <li>若您有特殊商務使用需求如視訊會議、直播、大量影音傳輸，由於攝像頭畫素、解析度、檔案大小等因素皆會影響傳輸效率，請您審慎考慮原號漫遊或購買符合您傳輸需求的上網卡！</li>
+              <li>若您欲購買eSIM(虛擬上網卡)，請您務必熟悉使用方法再購買！</li>
+              <li>網路使用有異常現象，可歸責於本公司產品者，將依據產品供應商規範並參酌台灣電信法規，給予客戶合理補！</li>
+              <li>請遵循網路公平使用原則(Fair Usage Policy-FUP)，如需長時間直播、看影片、Youtube、下載檔案等大頻寬需求，建議使用wifi！</li>
+              <li>您購買過程中所提供的個人資料，將僅被使用於與您溝通交流本公司星光卡服務！</li>
+              <li>線上客服 Line ID : @krk2486n <br>
+                週一~週五 9:00-21:00<br>
+                例假日 11:00-21:00<br>
+                其他時間 : 請留下訊息將優先處裡<br><br>
+                如有使用問題，請提供網路設定截圖、手機型號、卡號、及所在地點，以利快速解決。<br><br>
+                可直接掃描QR code<br>
+                <img src="img/qrcode.png" height="100" class="mt-3" alt="">
+              </li>
+
+              </ul>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <!-- footer -->
+    <footer_main></footer_main>
+  </div>
+
+
+  <noscript>您的瀏覽器不支援JavaScript功能，若本網站功能無法正常使用，請開啟瀏覽器JavaScript狀態</noscript>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="js/vue.global.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+
+
+  <script type="module">
+    import navbar_main from './js/page/menu.js';
+    import footer_main from './js/page/footer.js';
+    const app = Vue.createApp({
+      data() {
+        return {
+          hello: '123'
+        };
+      },
+      components: {
+        navbar_main,
+        footer_main,
+      }
+    });
+    app.mount('#app');
+  </script>
+
+  <script>
+    $(document).ready(function () {
+      // wow
+      var wow = new WOW({
+        boxClass: 'wow',
+        animateClass: 'animated',
+        offset: 0,
+        mobile: false,
+        live: true
+      });
+      wow.init();
+
+    });
+  </script>
+
+</body>
+
+</html>
