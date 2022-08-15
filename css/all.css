@@ -166,6 +166,15 @@ footer .copyright {
   border-bottom: 1px solid #E2E2E2;
   font-size: 0.9rem;
 }
+.nav_sticky .swiper {
+  overflow: visible;
+}
+
+.dropdown-toggle:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: 0;
+}
 
 .navbar {
   border-bottom: 1px solid #E2E2E2;
