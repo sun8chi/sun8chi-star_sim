@@ -73,11 +73,11 @@ a.link_default {
 }
 
 .nav_cate {
+    width: 100%;
     .swiper-wrapper {
-        justify-content: center;
-
+        // justify-content: center;
+        justify-content: flex-start;
         @include device-sm {
-            justify-content: flex-start;
         }
     }
 

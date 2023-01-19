@@ -79,6 +79,10 @@ $(document).ready(function () {
     var swiperCate = new Swiper('.swiperCate', {
         slidesPerView: 'auto',
         spaceBetween: 12,
+        navigation: {
+            nextEl: '.cateRight',
+            prevEl: '.cateLeft',
+        },
     })
 
 });

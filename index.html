@@ -19,13 +19,81 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
   <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
-  <link rel="stylesheet" href="css/all.css?v2" />
+  <link rel="stylesheet" href="css/all.css?v3" />
 </head>
 
 <body>
   <div id="app">
     <!-- menu -->
-    <navbar_main></navbar_main>
+    <!-- <navbar_main></navbar_main> -->
+
+    <div class="nav_sticky">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img src="img/logo.png" alt="">
+          </a>
+          <input type="text" class="form-control" id="" placeholder="輸入產品關鍵字">
+          <div class="nav_link">
+            <a href="#" class="link_default"><i class="fa-solid fa-mobile-screen-button"></i> 下載 MINI APP 享優惠</a>
+            <a href="faq.html">常見問題</a>
+          </div>
+        </div>
+      </nav>
+      <div class="nav_cate">
+        <div class="swiper swiperCate">
+          <div class="cate_arrow cateLeft"><i class="fa-solid fa-circle-chevron-left"></i></div>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="dropdown">
+                <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">亞洲地區</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">地區名稱</a></li>
+                  <li><a class="dropdown-item" href="#">地區名稱</a></li>
+                  <li><a class="dropdown-item" href="#">地區名稱</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="dropdown">
+                <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">歐洲地區</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">地區名稱</a></li>
+                  <li><a class="dropdown-item" href="#">地區名稱</a></li>
+                  <li><a class="dropdown-item" href="#">地區名稱</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">亞洲地區</a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">亞洲地區</a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">亞洲地區</a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">亞洲地區</a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">亞洲地區</a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">亞洲地區</a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">亞洲地區</a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">亞洲地區</a>
+            </div>
+          </div>
+          <div class="cate_arrow cateRight"><i class="fa-solid fa-circle-chevron-right"></i></div>
+        </div>
+      </div>
+    </div>
+
     <!-- 輪播 -->
     <div class="swiper bannerSwiper">
       <div class="swiper-wrapper">
@@ -72,6 +140,7 @@
       </div>
       <div class="swiper-pagination bg_light pageBanner"></div>
     </div>
+
     <!-- 飛這國有優惠 -->
     <section class="bg_light">
       <div class="container">
@@ -123,6 +192,7 @@
       </div>
 
     </section>
+
     <!-- 老司機推薦 -->
     <section>
       <div class="container">
@@ -174,12 +244,12 @@
       </div>
 
     </section>
+
     <!-- about -->
     <section class="section_about">
       <div class="container">
         <div class="row">
-          <div class="col-xl-2"></div>
-          <div class="col-xl-10">
+          <div class="col-md-5">
             <div class="info">
               <img src="img/card.svg" height="30" alt="">
               <h2>不偷流量 不誆網速</h2>
@@ -191,13 +261,15 @@
         </div>
       </div>
     </section>
+
     <!-- footer -->
     <footer_main></footer_main>
   </div>
 
 
   <noscript>您的瀏覽器不支援JavaScript功能，若本網站功能無法正常使用，請開啟瀏覽器JavaScript狀態</noscript>
-  <script src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/popper.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="js/vue.global.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
@@ -212,7 +284,7 @@
     const app = Vue.createApp({
       data() {
         return {
-          hello: '123'
+
         };
       },
       components: {
